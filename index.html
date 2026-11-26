@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sicily Unlocked: scopri destinazioni, esperienze e itinerari di viaggio personalizzati.">
+  <title>Sicily Unlocked | Discover Beyond</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+<header class="header">
+  <a href="index.html" class="logo">
+    SICILY <span>UNLOCKED.</span>
+    <small>TRAVEL BEYOND EXPECTATIONS</small>
+  </a>
+
+  <button class="menu-toggle" aria-label="Apri menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="navigation">
+    <a href="#destinations">Destinazioni</a>
+    <a href="#experiences">Esperienze</a>
+    <a href="#about">Chi siamo</a>
+    <a href="#contact">Contatti</a>
+    <a href="#contact" class="nav-cta">Pianifica il viaggio ↗</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="eyebrow light">YOUR JOURNEY STARTS HERE</span>
+    <h1>Il mondo è grande.<br><em>Scoprilo davvero.</em></h1>
+    <p>Viaggi autentici, esperienze indimenticabili e itinerari creati intorno a te.</p>
+    <div class="hero-actions">
+      <a href="#destinations" class="btn btn-light">Esplora destinazioni ↗</a>
+      <a href="#about" class="text-link">Scopri la nostra filosofia</a>
+    </div>
+  </div>
+  <div class="hero-bottom">
+    <span>01 — VIAGGIA SENZA CONFINI</span>
+    <span>ITALY · WORLDWIDE</span>
+  </div>
+</section>
+
+<section class="search-section">
+  <div class="search-heading">
+    <span class="eyebrow">START EXPLORING</span>
+    <h2>Da dove vuoi iniziare?</h2>
+  </div>
+
+  <form class="search-form" id="travel-search">
+    <label>
+      Destinazione
+      <select id="destination">
+        <option value="">Ovunque nel mondo</option>
+        <option value="Sicilia">Sicilia</option>
+        <option value="Giappone">Giappone</option>
+        <option value="Spagna">Spagna</option>
+        <option value="Grecia">Grecia</option>
+        <option value="Islanda">Islanda</option>
+      </select>
+    </label>
+
+    <label>
+      Quando vuoi partire?
+      <input type="month" id="travel-date">
+    </label>
+
+    <label>
+      Viaggiatori
+      <select id="travelers">
+        <option value="1">1 viaggiatore</option>
+        <option value="2" selected>2 viaggiatori</option>
+        <option value="3">3 viaggiatori</option>
+        <option value="4">4 viaggiatori</option>
+        <option value="5+">5 o più</option>
+      </select>
+    </label>
+
+    <button type="submit" class="btn btn-dark">Cerca viaggi ↗</button>
+  </form>
+</section>
+
+<section class="section destinations" id="destinations">
+  <div class="section-heading">
+    <div>
+      <span class="eyebrow">PLACES TO DISCOVER</span>
+      <h2>Il mondo ti aspetta.</h2>
+      <p>Luoghi straordinari, culture diverse e nuove prospettive.</p>
+    </div>
+    <a href="destinations.html" class="text-link">Tutte le destinazioni ↗</a>
+  </div>
+
+  <div class="destination-grid">
+    <a href="destinations.html#sicilia" class="destination-card large">
+      <img src="https://images.unsplash.com/photo-1530099486328-e021101a494a?w=1100" alt="Paesaggio costiero siciliano">
+      <div class="card-overlay">
+        <span>ITALIA · MEDITERRANEO</span>
+        <h3>Sicilia</h3>
+        <p>Tra mare, storia e tradizioni.</p>
+      </div>
+    </a>
+
+    <a href="destinations.html#giappone" class="destination-card">
+      <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=900" alt="Strada tradizionale di Kyoto">
+      <div class="card-overlay">
+        <span>ASIA · ESTREMO ORIENTE</span>
+        <h3>Giappone</h3>
+        <p>Tradizione e modernità.</p>
+      </div>
+    </a>
+
+    <a href="destinations.html#grecia" class="destination-card">
+      <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=900" alt="Case bianche della Grecia">
+      <div class="card-overlay">
+        <span>EUROPA · MEDITERRANEO</span>
+        <h3>Grecia</h3>
+        <p>Il fascino delle isole.</p>
+      </div>
+    </a>
+
+    <a href="destinations.html#spagna" class="destination-card">
+      <img src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=900" alt="Architettura di Barcellona">
+      <div class="card-overlay">
+        <span>EUROPA · IBERIA</span>
+        <h3>Spagna</h3>
+        <p>Energia, arte e cultura.</p>
+      </div>
+    </a>
+
+    <a href="destinations.html#islanda" class="destination-card">
+      <img src="https://images.unsplash.com/photo-1476610182048-b716b8518aae?w=900" alt="Paesaggio naturale islandese">
+      <div class="card-overlay">
+        <span>EUROPA · NORD</span>
+        <h3>Islanda</h3>
+        <p>La natura senza confini.</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section class="manifesto" id="about">
+  <div class="manifesto-image">
+    <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1200" alt="Lago alpino circondato dalle montagne">
+  </div>
+  <div class="manifesto-content">
+    <span class="eyebrow">THE WAY WE TRAVEL</span>
+    <h2>Non vendiamo semplicemente viaggi. <em>Creiamo ricordi.</em></h2>
+    <p>Crediamo che ogni viaggio debba raccontare una storia. Per questo valorizziamo le esperienze autentiche, le destinazioni meno conosciute e gli itinerari costruiti sulle tue passioni.</p>
+    <a href="about.html" class="btn btn-dark">La nostra storia ↗</a>
+  </div>
+</section>
+
+<section class="section experiences" id="experiences">
+  <div class="section-heading">
+    <div>
+      <span class="eyebrow">TRAVEL YOUR WAY</span>
+      <h2>Ogni viaggio ha un'anima.</h2>
+      <p>Qual è la tua idea di viaggio perfetto?</p>
+    </div>
+    <a href="experiences.html" class="text-link">Scopri tutte le esperienze ↗</a>
+  </div>
+
+  <div class="experience-grid">
+    <article class="experience-card">
+      <div class="experience-icon">⌖</div>
+      <h3>Avventura</h3>
+      <p>Paesaggi selvaggi, trekking e nuove sfide.</p>
+      <a href="experiences.html">Esplora ↗</a>
+    </article>
+    <article class="experience-card">
+      <div class="experience-icon">✳</div>
+      <h3>Cultura</h3>
+      <p>Storie, architettura e tradizioni locali.</p>
+      <a href="experiences.html">Esplora ↗</a>
+    </article>
+    <article class="experience-card">
+      <div class="experience-icon">◌</div>
+      <h3>Relax</h3>
+      <p>Mare, benessere e momenti da assaporare.</p>
+      <a href="experiences.html">Esplora ↗</a>
+    </article>
+    <article class="experience-card">
+      <div class="experience-icon">◇</div>
+      <h3>Gastronomia</h3>
+      <p>Scopri il mondo attraverso i suoi sapori.</p>
+      <a href="experiences.html">Esplora ↗</a>
+    </article>
+  </div>
+</section>
+
+<section class="quote-section">
+  <span class="eyebrow light">A DIFFERENT WAY TO SEE THE WORLD</span>
+  <h2>La vita è troppo breve<br>per visitare il mondo <em>di fretta.</em></h2>
+</section>
+
+<section class="contact-section" id="contact">
+  <div>
+    <span class="eyebrow">LET'S PLAN SOMETHING SPECIAL</span>
+    <h2>Il prossimo viaggio<br>inizia con un'idea.</h2>
+    <p>Raccontaci cosa immagini. Al resto pensiamo insieme.</p>
+  </div>
+
+  <a href="contact.html" class="btn btn-light">Progetta il tuo viaggio ↗</a>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-top">
+    <a href="index.html" class="logo footer-logo">
+      SICILY <span>UNLOCKED.</span>
+      <small>TRAVEL BEYOND EXPECTATIONS</small>
+    </a>
+    <p>Discover beyond expectations.<br>Travel with a different perspective.</p>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 Sicily Unlocked</span>
+    <span>Made for curious travellers.</span>
+    <a href="contact.html">Contattaci ↗</a>
+  </div>
+</footer>
+
+</body>
+</html>
